@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ListEmp from './Pages/ListEmp';
+import AddEmp from './Pages/AddEmp';
+import EditEmp from './Pages/EditEmp';
+import ViewEmp from './Pages/ViewEmp';
+import Login from './Pages/Login';
+import Signup from './Pages/Signup';
+import "bootstrap/dist/css/bootstrap.min.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function App() {    
+
+    return (
+        <div className="container pt-3">
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Login />} />
+                    <Route path="/list" element={<ListEmp />} />
+                    <Route path="/addemp" element={<AddEmp />} />
+                    <Route path="/editemp/:id" element={<EditEmp />} />
+                    <Route path="/viewemp/:id" element={<ViewEmp />} />
+                    <Route path="/signup" element={<Signup />} />
+                </Routes>
+            </BrowserRouter>
+        </div>
+    );
 }
 
 export default App;

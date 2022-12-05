@@ -1,3 +1,9 @@
+# COMP 3123 - Assignment 02
+## Maitri Amit Patel
+## Student ID: 101308984
+
+For application screenshot, please open Assignment 02 (Screenshots) pdf file.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
